@@ -7,7 +7,7 @@
   height: 100vh;
   position: relative;
   flex-direction: column;
-  gap: 100px;
+  gap: 10%;
 }
 
 .title {
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 30px;
+  left: 10%;
   top: 40px;
   h1 {
     font-weight: 400;
@@ -34,10 +34,10 @@
   align-items: center;
   width: fit-content;
   height: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 
@@ -49,28 +49,33 @@
 }
 
 .classes {
+  margin-top: -7%;
   display: flex;
   flex-direction: column;
   position: relative;
   cursor: pointer;
+
   h1 {
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     color: white;
     position: relative;
-    left: 30px;
+    left: 10%;
   }
-  h1::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    display: flex;
-    width: 0;
-    height: 5px;
-    background-color: #dd2e44;
-    transition: 0.5s;
-  }
-  h1:hover::before{
-    width: 100%;
-  }
+}
+.lineanimation {
+  width: fit-content;
+}
+.lineanimation::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  display: flex;
+  width: 0;
+  height: 10%;
+  background-color: #dd2e44;
+  transition: 0.3s;
+}
+.lineanimation:hover::before {
+  width: 100%;
 }
