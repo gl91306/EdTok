@@ -3,4 +3,12 @@
   flex: 4;
   background-color: white;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.video{
+  width: 25%;
+  height: 70%;
+  border-radius: 30px;
+  border: 1px black solid ;
 }

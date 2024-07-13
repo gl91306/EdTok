@@ -5,6 +5,7 @@ import "./index.css";
 
 function App() {
   const [showDevMode, setshowDevMode] = useState(false);
+  const [signin, setsignin] = useState();
   const DevMode = () => {
     if (showDevMode) {
       return (
@@ -15,14 +16,25 @@ function App() {
       );
     }
   };
+  const signinbar = () => {
+    return (
+      <div>
+        <a href="/signin.js">Sign In</a>
+      </div>
+    );
+  };
+  const nosigninbar = () => {
+    return;
+  };
   return (
     <>
+      {signin ? signinbar() : nosigninbar()}
       <button id="Dev" onClick={() => setshowDevMode(!showDevMode)}>
         Dev Mode
       </button>
 
       <div className="App">
-        <SideBar showDevMode = {showDevMode} DevMode = {DevMode}/>
+        <SideBar showDevMode={showDevMode} DevMode={DevMode} />
         <MainBar />
       </div>
     </>
