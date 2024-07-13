@@ -1,0 +1,35 @@
+#header {
+  width: 100%;
+  height: 8.58%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+}
+
+#profilecontainer {
+  width: 150px;
+  height: 50px;
+  background-color: #262626;
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#username {
+  font-family: Inter;
+  color: white;
+  user-select: none;
+}
+
+#pfp {
+  width: 50;
+  height: 50px;
+  border-radius: 100px;
+}
