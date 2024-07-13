@@ -1,15 +1,14 @@
 import "./sidebar.css";
+import MyClasses from "../MyClasses/MyClasses";
 
 function Sidebar(props) {
   return (
     <div className="topics">
       <div className="title">
-        <h1>
-          EdTok
-        </h1>
+        <h1 onClick={() => props.setCurrPage(<MyClasses />)}>EdTok</h1>
       </div>
       <div className="yours ">
-        <h1 >For You</h1>
+        <h1>For You</h1>
       </div>
       <div className="classes">
         <h1 className="lineanimation">Math</h1>
