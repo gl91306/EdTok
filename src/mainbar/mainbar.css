@@ -1,0 +1,6 @@
+.rightside {
+  display: flex;
+  flex: 4;
+  background-color: white;
+  height: 100vh;
+}
