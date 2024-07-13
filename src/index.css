@@ -1,7 +1,5 @@
-body {
-  margin: 0;
-}
-#horizontal,
+
+/* #horizontal,
 #vertical {
   position: fixed;
   background-color: black;
@@ -31,7 +29,7 @@ body {
   border-radius: 5px;
   margin: 10px;
   transition: background-color 0.3s ease;
-}
+} */
 body {
   display: flex;
   margin: 0;

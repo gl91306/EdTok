@@ -29,17 +29,14 @@ function App() {
     return;
   };
   return (
-    <>
+    <BrowserRouter>
       {signin ? signinbar() : nosigninbar()}
-      <button id="Dev" onClick={() => setshowDevMode(!showDevMode)}>
-        Dev Mode
-      </button>
       
       <div className="App">
         <SideBar showDevMode={showDevMode} DevMode={DevMode} />
         <MainBar />
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
