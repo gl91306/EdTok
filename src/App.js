@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import MainPage from "./main/main";
 import LoginPage from "./login/login";
+import RegisterPage from "./register/register";
 import "./index.css";
 import React, { useState, useEffect } from "react";
 
@@ -16,6 +17,10 @@ function App() {
             <Route
               path="/login"
               element={<LoginPage signin={signin} setsignin={setsignin} />}
+            />
+            <Route
+              path="/register"
+              element={<RegisterPage signin={signin} setsignin={setsignin} />}
             />
           </Routes>
         </BrowserRouter>

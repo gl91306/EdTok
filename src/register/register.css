@@ -1,0 +1,17 @@
+.windows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+.registerwindow {
+  height: 70%;
+  width: 30%;
+  background-color: #dd2e44;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.signuptitle {
+}
