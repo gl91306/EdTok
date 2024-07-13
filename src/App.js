@@ -1,6 +1,8 @@
 import SideBar from "./sidebar/sidebar";
 import MainBar from "./mainbar/mainbar";
 import React, { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+
 import "./index.css";
 
 function App() {
@@ -32,7 +34,7 @@ function App() {
       <button id="Dev" onClick={() => setshowDevMode(!showDevMode)}>
         Dev Mode
       </button>
-
+      
       <div className="App">
         <SideBar showDevMode={showDevMode} DevMode={DevMode} />
         <MainBar />
