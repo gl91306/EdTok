@@ -13,7 +13,10 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/login" element={<LoginPage />} />
+            <Route
+              path="/login"
+              element={<LoginPage signin={signin} setsignin={setsignin} />}
+            />
           </Routes>
         </BrowserRouter>
       </div>
