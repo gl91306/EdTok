@@ -16,7 +16,8 @@ function Video(props) {
           url={VideoMp4}
           width="450px"
           height="800px"
-          volume={props.sound}
+          volume={1}
+          muted={props.sound}
           playing={play}
         />
       </div>

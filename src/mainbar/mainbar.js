@@ -8,7 +8,7 @@ import VideoJS from "../videos/video";
 
 function Mainbar() {
   const [comments, setcomments] = useState(true);
-  const [sound, setsound] = useState(1);
+  const [sound, setsound] = useState(false);
   const handleComments = () => {
     setcomments(!comments);
   };
