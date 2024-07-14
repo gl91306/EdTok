@@ -15,8 +15,9 @@
   height: 100px;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   left: 10%;
   top: 40px;
   h1 {
@@ -26,9 +27,20 @@
     font-family: "Modak", system-ui;
     color: white;
     font-size: 75px;
+    margin: 0;
+    line-height: 50px;
+  }
+  h6 {
+    user-select: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1em;
+    margin: 0;
   }
 }
-.foryou {
+.yours {
   position: relative;
   display: flex;
   background-color: #dd2e44;

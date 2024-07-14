@@ -1,8 +1,8 @@
 #header {
   width: 100%;
   height: 8.58%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -10,27 +10,29 @@
 }
 
 #profilecontainer {
-  width: 150px;
-  height: 50px;
+  width: 160px;
+  height: 60px;
   background-color: #262626;
   display: flex;
   margin-right: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
-  border-radius: 15px;
+  border-radius: 20px;
   cursor: pointer;
-  gap: 15px;
 }
 
 #username {
   font-family: Inter;
   color: white;
   user-select: none;
+  margin-left: 20px;
 }
 
 #pfp {
-  width: 50;
-  height: 50px;
+  width: 45;
+  height: 45px;
   border-radius: 100px;
+  margin-right: 10px;
+  user-select: none;
 }
