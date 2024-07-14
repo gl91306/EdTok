@@ -6,15 +6,17 @@ function MainPage() {
   const [currPage, setCurrPage] = useState(<MainBar />);
   return (
     <>
-      <div></div>
-      <SideBar setCurrPage={setCurrPage} />
+      <div>
+        <SideBar setCurrPage={setCurrPage} />
+      </div>
+
       <div
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          width: "100%", 
+          width: "100%",
         }}
       >
         <Header />

@@ -1,7 +1,5 @@
 .rightside {
   display: flex;
-  flex: 3.5;
-  background-color: white;
   height: 100%;
   width: 100%;
   justify-content: center;
