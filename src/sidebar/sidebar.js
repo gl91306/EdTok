@@ -2,6 +2,7 @@ import "./sidebar.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import MyClasses from "../MyClasses/MyClasses";
+import Mainbar from "../mainbar/mainbar";
 
 function Sidebar(props) {
   const [clases, setClases] = useState([]);
@@ -38,7 +39,13 @@ function Sidebar(props) {
         {props.educator ? <h6>Educator</h6> : <></>}
       </div>
       <div className="foryou">
-        <h1>{props.educator ? "Preview" : "For You"}</h1>
+        <h1
+          onClick={() => {
+            props.setCurrPage(<Mainbar />);
+          }}
+        >
+          {props.educator ? "Preview" : "For You"}
+        </h1>
       </div>
       <div className="classes">
         {clases.map((name, id) => (

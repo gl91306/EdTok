@@ -4,7 +4,7 @@
   display: flex;
   background-color: #262626;
   height: 100vh;
-  position: relative;
+  position: fixed;
   flex-direction: column;
   gap: 10%;
   width: 300px;

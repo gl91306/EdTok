@@ -23,19 +23,38 @@ function Mainbar() {
 
   return (
     <div className="rightside">
-      <div className="videos">
-        <VideoJS sound={sound} />
+      <div id="overall">
+        <div className="videos">
+          <VideoJS sound={sound} />
+        </div>
+        {comments ? <Comments /> : null}
+        <div className="videobuttons">
+          <div className="background">
+            <img src={Hearts}></img>
+          </div>
+          <div className="background" onClick={handleComments}>
+            <img src={comment} />
+          </div>
+          <div className="background" onClick={handleSound}>
+            <img src={Sound}></img>
+          </div>
+        </div>
       </div>
-      {comments ? <Comments /> : null}
-      <div className="videobuttons">
-        <div className="background">
-          <img src={Hearts}></img>
+      <div id="overall">
+        <div className="videos">
+          <VideoJS sound={sound} />
         </div>
-        <div className="background" onClick={handleComments}>
-          <img src={comment} />
-        </div>
-        <div className="background" onClick={handleSound}>
-          <img src={Sound}></img>
+        {comments ? <Comments /> : null}
+        <div className="videobuttons">
+          <div className="background">
+            <img src={Hearts}></img>
+          </div>
+          <div className="background" onClick={handleComments}>
+            <img src={comment} />
+          </div>
+          <div className="background" onClick={handleSound}>
+            <img src={Sound}></img>
+          </div>
         </div>
       </div>
     </div>

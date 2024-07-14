@@ -4,11 +4,22 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  position: relative;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
-
-
-
-
+#overall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 80vw;
+  position: relative;
+  left: 200px;
+}
 .videobuttons {
   display: flex;
   flex-direction: column;
