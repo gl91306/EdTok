@@ -6,6 +6,7 @@ function MainPage() {
   const [currPage, setCurrPage] = useState(<MainBar />);
   return (
     <>
+      <div></div>
       <SideBar setCurrPage={setCurrPage} />
       <div
         style={{

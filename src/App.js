@@ -11,19 +11,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route
-              path="/login"
-              element={<LoginPage signin={signin} setsignin={setsignin} />}
-            />
-            <Route
-              path="/register"
-              element={<RegisterPage signin={signin} setsignin={setsignin} />}
-            />
-          </Routes>
-        </BrowserRouter>
+        <MainPage />
       </div>
     </>
   );
