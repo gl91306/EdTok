@@ -1,7 +1,24 @@
 import "./sidebar.css";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import MyClasses from "../MyClasses/MyClasses";
 
 function Sidebar(props) {
+  const [clases, setClases] = useState([]);
+  useEffect(() => {
+    console.log(JSON.parse(props.authToken));
+    axios
+      .post("http://localhost:5000/classes", {
+        username: JSON.parse(props.authToken)[1],
+        authtoken: JSON.parse(props.authToken)[0],
+        type: JSON.parse(props.authToken)[2],
+      })
+      .then((response) => {
+        console.log(response.data);
+        setClases(response.data);
+      });
+  }, []);
+
   return (
     <div className="topics">
       <div className="title">
@@ -24,10 +41,11 @@ function Sidebar(props) {
         <h1>{props.educator ? "Preview" : "For You"}</h1>
       </div>
       <div className="classes">
-        <h1 className="lineanimation">Math</h1>
-        <h1 className="lineanimation">Reading</h1>
-        <h1 className="lineanimation">Biology</h1>
-        <h1 className="lineanimation">World History</h1>
+        {clases.map((name, id) => (
+          <h1 className="lineanimation" key={id}>
+            {name[0]}
+          </h1>
+        ))}
       </div>
     </div>
   );

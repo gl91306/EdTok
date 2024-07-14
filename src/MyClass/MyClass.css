@@ -1,0 +1,31 @@
+
+.myclasses {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  justify-content: left;
+  align-items: start;
+  margin-top: 60px;
+}
+
+#Title {
+  margin-left: 60px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-size: 4em;
+  user-select: none;
+}
+
+#classes {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}

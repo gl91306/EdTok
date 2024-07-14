@@ -1,20 +1,20 @@
-import "./MyClasses.css";
-import Class from "./class/class";
-import MyClass from "../MyClass/MyClass";
+import "./MyClass.css";
+import Class from "./clas/clas";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import AddClass from "./popupAddclass/addClass";
+import AddClass from "./popupAddclass/addAssig";
 
-function MyClasses(props) {
+function MyClass(props) {
   const [classAdd, setclassAdd] = useState(false);
   const [clases, setClases] = useState([]);
   useEffect(() => {
     console.log(JSON.parse(props.authToken));
     axios
-      .post("http://localhost:5000/classes", {
+      .post("http://localhost:5000/clas", {
         username: JSON.parse(props.authToken)[1],
         authtoken: JSON.parse(props.authToken)[0],
         type: JSON.parse(props.authToken)[2],
+        classtoken: props.classtoken,
       })
       .then((response) => {
         console.log(response.data);
@@ -37,18 +37,10 @@ function MyClasses(props) {
     <>
       {classAdd ? <AddClass /> : null}
       <div className="myclasses">
-        <div id="Title">My Classes</div>
+        <div id="Title">My Class</div>
         <div id="classes">
           {clases.map((clas, id) => (
-            <Class
-              name={clas[0]}
-              id={clas[1]}
-              image={clas[2]}
-              key={id}
-              onClick={() => {
-                props.setCurrPage(<MyClass />);
-              }}
-            />
+            <Class name={clas[0]} id={clas[1]} image={clas[2]} key={id} />
           ))}
           {props.educator ? <TeacherAdd /> : null}
         </div>
@@ -56,4 +48,4 @@ function MyClasses(props) {
     </>
   );
 }
-export default MyClasses;
+export default MyClass;
