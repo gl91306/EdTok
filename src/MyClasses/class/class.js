@@ -2,7 +2,7 @@ import "./class.css";
 function Header({ name, image, id }) {
   return (
     <div
-      id="class"
+      className="class"
       style={{ backgroundImage: "url(/images/" + image + ".png)" }}
       onClick={() => {
         // send with id then change page

@@ -4,10 +4,11 @@ import Header from "../header/header";
 import React, { useState, useEffect } from "react";
 function MainPage() {
   const [currPage, setCurrPage] = useState(<MainBar />);
+  const [educator, seteducator] = useState(true);
   return (
     <>
       <div>
-        <SideBar setCurrPage={setCurrPage} />
+        <SideBar setCurrPage={setCurrPage}  educator = {educator}/>
       </div>
 
       <div

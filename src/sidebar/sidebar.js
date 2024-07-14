@@ -5,7 +5,19 @@ function Sidebar(props) {
   return (
     <div className="topics">
       <div className="title">
-        <h1 onClick={() => props.setCurrPage(<MyClasses />)}>EdTok</h1>
+        <h1
+          onClick={() =>
+            props.setCurrPage(
+              <MyClasses
+                educator={props.educator}
+                currPage={props.currPage}
+                setCurrPage={props.setCurrPage}
+              />
+            )
+          }
+        >
+          EdTok
+        </h1>
         {props.educator ? <h6>Educator</h6> : <></>}
       </div>
       <div className="foryou">

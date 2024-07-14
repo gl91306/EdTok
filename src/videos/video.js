@@ -19,6 +19,7 @@ function Video(props) {
           volume={1}
           muted={props.sound}
           playing={play}
+          loop={true}
         />
       </div>
     </>
