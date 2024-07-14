@@ -1,5 +1,5 @@
 import "./comments.css";
-import Send from "../images/send.png";
+import Send from "../images/red-send.png";
 import profile from "../images/pfp.png";
 function Comments() {
   return (

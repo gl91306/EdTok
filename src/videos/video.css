@@ -1,0 +1,15 @@
+.vid{
+  width: 450px;
+  height: 800px;
+  border-radius: 30px;
+  border: 1px black solid;
+
+  video {
+    object-fit: cover;
+    width: 450px;
+    height: 800px;
+    border-radius: 30px;
+}}
+.video:hover{
+  border: 2px black solid;
+}
