@@ -13,7 +13,7 @@ function MainPage() {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          width: "100%",
+          width: "100%", 
         }}
       >
         <Header />

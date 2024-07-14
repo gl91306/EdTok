@@ -7,7 +7,7 @@ function Sidebar(props) {
       <div className="title">
         <h1 onClick={() => props.setCurrPage(<MyClasses />)}>EdTok</h1>
       </div>
-      <div className="yours ">
+      <div className="foryou">
         <h1>For You</h1>
       </div>
       <div className="classes">
